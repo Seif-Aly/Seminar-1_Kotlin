@@ -1,7 +1,6 @@
-fun main(args: Array<String>) {
-    val a : Int = 1
-    val b : Int = 1
-    val c : Int = a+b
-    println(c)
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    val userInput : String = readln()
+    val names = userInput.split(" ").toTypedArray()
+    val lastElement = names.last()
+    println(lastElement)
 }
